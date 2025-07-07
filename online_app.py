@@ -9,7 +9,7 @@ st.set_page_config(page_title="Customer Segmentation", layout="wide")
 st.title("🧠 Online Customer Segmentation App:")
 
 def load_data():
-    df = pd.read_csv("C:/Python/Online Customer Segmentation/Online Retail.xlsx - Online Retail.csv", encoding='ISO-8859-1')
+     df = pd.read_csv("Online Retail.xlsx - Online Retail.csv", encoding='ISO-8859-1')
     df.dropna(subset=['CustomerID'], inplace=True)
     df = df[df['Quantity'] > 0]
     df = df[df['UnitPrice'] > 0] 
