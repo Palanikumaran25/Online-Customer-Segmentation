@@ -73,6 +73,7 @@ with st.expander("📊 Data Visualization"):
      
 #Choose number of clusters 
 with st.sidebar:
+    st.header("⚙️ Clustering Settings:")
     k = st.slider("Select number of clusters (K)", min_value=2, max_value=10, value=4)
 
 kmeans = KMeans(n_clusters=k, random_state= 42)
