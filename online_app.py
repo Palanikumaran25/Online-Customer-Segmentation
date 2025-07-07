@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
 from datetime import timedelta
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
